@@ -101,3 +101,33 @@ body {
 	justify-content: right;
 	align-items: center;
 }
+
+.input-items:has(#r1:checked) ~ .slider .slider-img {
+	transform: translateX(0);
+}
+
+.input-items:has(#r2:checked) ~ .slider .slider-img {
+	transform: translateX(-100%);
+}
+
+.input-items:has(#r3:checked) ~ .slider .slider-img {
+	transform: translateX(-200%);
+}
+
+.input-items:has(#r4:checked) ~ .slider .slider-img {
+	transform: translateX(-300%);
+}
+
+.input-items:has(#r1:checked) ~ .slider-text-box .text-content #text-1,
+.input-items:has(#r2:checked) ~ .slider-text-box .text-content #text-2,
+.input-items:has(#r3:checked) ~ .slider-text-box .text-content #text-3,
+.input-items:has(#r4:checked) ~ .slider-text-box .text-content #text-4 {
+	display: inline;
+}
+
+#r1:checked + .slider-nav-item,
+#r2:checked + .slider-nav-item,
+#r3:checked + .slider-nav-item,
+#r4:checked + .slider-nav-item {
+	background-color: #ffffff;
+}
