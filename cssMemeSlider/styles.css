@@ -60,6 +60,11 @@ body {
 .slider {
 	overflow: hidden;
 	order: 1;
+	border-radius: 10%;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+		-23px 0 20px -23px rgba(0, 0, 0, .8),
+		23px 0 20px -23px rgba(0, 0, 0, .8),
+		0 0 40px rgba(0, 0, 0, .1) inset;
 }
 
 .slider-img {
@@ -69,5 +74,30 @@ body {
 
 .slider-img img {
 	width: 100%;
-	border-radius: 10%;
+}
+
+.slider-nav-item {
+	width: 1.563rem;
+	height: 1.563rem;
+	border: 0.125rem solid #ffffff;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	border-radius: 50%;
+} 
+
+.slider-nav-item:hover {
+	background-color: #ffffff;
+}
+
+.slider-nav-item:active {
+	background-color: black;
+} 
+
+.input-items {
+	display: flex;
+	min-width: 50%;
+	order: 3;
+	gap: 0.5rem;
+	justify-content: right;
+	align-items: center;
 }
