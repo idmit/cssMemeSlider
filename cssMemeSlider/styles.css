@@ -131,3 +131,20 @@ body {
 #r4:checked + .slider-nav-item {
 	background-color: #ffffff;
 }
+
+@media (max-width: 850px) {
+	.input-items {
+		min-width: 30%;
+	}
+	.slider-text-box {
+		min-width: 70%;
+	}
+}
+
+@media (max-width: 650px) {
+	.input-items {
+		width: 100%;
+		order: 2;
+		justify-content: center;
+	}
+}
